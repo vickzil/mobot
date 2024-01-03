@@ -1,0 +1,26 @@
+import React, { FunctionComponent } from 'react';
+import { ImageSourcePropType, ScrollViewProps } from 'react-native';
+declare type Props = ScrollViewProps & {
+    children?: React.ReactNode;
+    childrenStyle?: any;
+    overlayColor?: string;
+    foregroundParallaxRatio?: number;
+    maxHeight?: number;
+    maxOverlayOpacity?: number;
+    minHeight?: number;
+    minOverlayOpacity?: number;
+    renderFixedForeground?: () => React.ElementType<any>;
+    renderForeground?: () => React.ReactNode<any>;
+    renderHeader?: () => React.ReactNode;
+    foregroundExtrapolate?: 'clamp' | 'extend' | 'identity' | undefined;
+    renderTouchableFixedForeground?: () => React.ElementType<any>;
+    ScrollViewComponent?: React.ElementType<ScrollViewProps>;
+    scrollViewBackgroundColor?: string;
+    headerImage?: ImageSourcePropType;
+    useNativeDriver?: boolean;
+    headerContainerStyle?: Object;
+    fixedForegroundContainerStyles?: Object;
+    disableHeaderGrow?: boolean;
+};
+export declare const ImageHeaderScrollView: FunctionComponent<Props>;
+export {};
